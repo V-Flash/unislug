@@ -1,14 +1,16 @@
 {
   "name": "unislug",
   "version": "0.1.0",
-  "description": "Zero-dependency slug generator with proper Hindi, Gujarati, Arabic and Cyrillic support (transliterate or keep native script).",
-  "keywords": ["slug", "slugify", "transliterate", "hindi", "gujarati", "devanagari", "arabic", "indic", "url", "seo"],
+  "description": "Zero-dependency slug generator with proper Hindi, Gujarati, Bengali and Cyrillic support (transliterate or keep native script).",
+  "keywords": ["slug", "slugify", "transliterate", "hindi", "gujarati", "devanagari", "bengali", "indic", "url", "seo"],
   "author": "VIVEK PARMAR",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aapka-username/unislug.git"
+    "url": "git+https://github.com/V-Flash/unislug.git"
   },
+  "bugs": { "url": "https://github.com/V-Flash/unislug/issues" },
+  "homepage": "https://github.com/V-Flash/unislug#readme",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./src/index.js",
