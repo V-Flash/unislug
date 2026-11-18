@@ -1,0 +1,32 @@
+{
+  "name": "unislug",
+  "version": "0.1.0",
+  "description": "Zero-dependency slug generator with proper Hindi, Gujarati, Arabic and Cyrillic support (transliterate or keep native script).",
+  "keywords": ["slug", "slugify", "transliterate", "hindi", "gujarati", "devanagari", "arabic", "indic", "url", "seo"],
+  "author": "VIVEK PARMAR",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aapka-username/unislug.git"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./src/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./src/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["src", "dist", "index.d.ts", "README.md", "LICENSE"],
+  "sideEffects": false,
+  "engines": { "node": ">=16" },
+  "scripts": {
+    "build": "esbuild src/index.js --format=cjs --outfile=dist/index.cjs",
+    "test": "node --test",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "devDependencies": { "esbuild": "^0.25.0" }
+}
